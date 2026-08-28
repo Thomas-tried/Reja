@@ -1,0 +1,619 @@
+* {
+  font-family: sans-serif;
+}
+
+span {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 123.6%;
+  color: #2b2b2b;
+}
+
+.frame {
+  width: 100%;
+  height: 100%;
+  background-color: #e5e5e5;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.main_frame {
+  position: relative;
+  width: 1440px;
+  height: 1312px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 2px;
+  background-color: #f0f0f6;
+}
+
+.main_frame .left_frame {
+  position: relative;
+  width: 305px;
+  height: 1312px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.main_frame .midd_frame {
+  position: relative;
+  width: 970px;
+  height: 1312px;
+  margin-left: 30px;
+  margin-right: 27px;
+  /* background-color: aqua; */
+}
+
+.main_frame .right_frame {
+  position: relative;
+  width: 108px;
+  height: 1312px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main_frame .left_1 {
+  position: relative;
+  width: 228px;
+  height: 267px;
+  margin-top: 50px;
+  margin-left: 37px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_frame .left_1 .left_1-1 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 156.16px;
+  height: 142.53px;
+  margin-bottom: 29.46px;
+}
+
+.main_frame .left_1 .left_1-2 {
+  position: relative;
+  width: 66.63px;
+  height: 20.9px;
+  margin-bottom: 6.65px;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 123.6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  color: #2b2b2b;
+}
+
+.main_frame .left_1 .left_1-3 {
+  position: relative;
+  width: 147.84px;
+  height: 25.65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  text-transform: capitalize;
+  font-feature-settings:
+    "calt" off,
+    "kern" off;
+  color: #767676;
+}
+
+.left-icons {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 238px;
+  margin-top: 19px;
+}
+
+.link_href {
+  text-decoration: none;
+  color: black;
+}
+
+.icon {
+  position: relative;
+  width: 24.99px;
+  height: 22.8px;
+  border-radius: 50%;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  /* background: #ffb400; */
+}
+
+.icon-1 {
+  position: relative;
+  left: 29.17%;
+  right: 27.08%;
+  margin-top: 5.86px;
+}
+
+.main_frame .marginer {
+  position: relative;
+  width: 220px;
+  height: 0px;
+  margin-left: 40px;
+  margin-bottom: 25px;
+  margin-top: 39px;
+  border: 1.5px solid #f0f0f6;
+}
+
+.main_frame .left_2 {
+  position: relative;
+  width: 221px;
+  height: 126px;
+  margin-left: 44px;
+  /* background-color: aqua; */
+}
+
+.main_frame .left_3 {
+  position: relative;
+  width: 220px;
+  height: 153px;
+  margin-left: 45px;
+  margin-bottom: 25px;
+  /* background-color: aqua; */
+}
+
+.main_frame .left_4 {
+  position: relative;
+  width: 220px;
+  height: 252px;
+  margin-left: 45px;
+  /* margin-top: 25px; */
+  /* background-color: aqua; */
+}
+
+.main_frame .left_5 {
+  position: relative;
+  width: 186px;
+  height: 148px;
+  margin-left: 45px;
+  /* margin-top: 25px; */
+  /* background-color: aqua; */
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+/* .info-row span {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 123.6%;
+  color: #2b2b2b;
+} */
+
+.label {
+  background-color: orange;
+  padding: 4px 7px;
+  font-weight: 600;
+}
+
+.skill-line {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 0;
+  border-bottom: 2px solid orange;
+  font-size: 13px;
+}
+
+.skills-box h2 {
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 123.6%;
+}
+
+.extra-skills-box h2 {
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 123.6%;
+  margin-top: 0;
+}
+
+.skill-line:last-child {
+  border-bottom: none;
+}
+
+.skill {
+  margin-bottom: 12px;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 7px;
+  font-size: 16px;
+}
+
+.progress {
+  width: 100%;
+  height: 5px;
+
+  background-color: #e5e5e5;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: orange;
+}
+
+/* Skill percentages */
+
+.html {
+  width: 90%;
+}
+
+.css {
+  width: 85%;
+}
+
+.js {
+  width: 80%;
+}
+
+.php {
+  width: 75%;
+}
+
+.wordpress {
+  width: 85%;
+}
+
+.spanish {
+  width: 60%;
+}
+
+.extra-skills-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.extra-skills-box li {
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 123.6%;
+  color: #2b2b2b;
+}
+
+.extra-skills-box li::before {
+  content: "☷";
+  margin-right: 12px;
+  color: orange;
+}
+
+
+ /* mid frame */
+
+ /* =================================
+   PART 1 — HERO SECTION
+================================= */
+
+.hero_section {
+    width: 100%;
+    height: 425px;
+
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    box-sizing: border-box;
+    padding: 50px 50px 0 50px;
+}
+
+
+.hero_text {
+    width: 52%;
+}
+
+.hero_text h1 {
+    font-size: 38px;
+    line-height: 1.2;
+    margin: 0 0 20px 0;
+}
+
+.hero_text p {
+    width: 480px;
+
+    font-size: 14px;
+    line-height: 1.6;
+
+    color: #666;
+
+    margin-bottom: 25px;
+}
+
+
+.hire_btn {
+    background-color: #ffb000;
+
+    border: none;
+
+    padding: 15px 25px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.hero_image {
+    width: 40%;
+    height: 100%;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+.hero_image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: bottom;
+}
+
+
+/* =================================
+   PART 2 — SERVICES INTRO
+================================= */
+
+.services_intro {
+    width: 100%;
+    height: 450px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+
+.services_intro h2 {
+    font-size: 30px;
+
+    margin: 30px 0 20px 0;
+}
+
+
+.services_intro p {
+    width: 550px;
+
+    font-size: 14px;
+    line-height: 1.5;
+
+    color: #666;
+
+    margin: 0;
+}
+
+
+/* =================================
+   PART 3 — SIX SERVICE BOXES
+================================= */
+
+.services_grid {
+    width: 100%;
+    height: 400px;
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+
+    padding: 0 30px;
+
+    box-sizing: border-box;
+}
+
+
+/* EACH BOX */
+
+.service_box {
+    height: 160px;
+
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 50px;
+
+    box-sizing: border-box;
+}
+
+
+/* ICON */
+
+.service_icon {
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+
+/* TITLE */
+
+.service_box h3 {
+    font-size: 17px;
+
+    margin: 0 0 10px 0;
+}
+
+
+/* DESCRIPTION */
+
+.service_box p {
+    font-size: 12px;
+
+    color: #666;
+
+    margin: 0;
+
+    line-height: 1.5;
+}
+
+
+/* READ MORE */
+
+.service_box a {
+    margin-top: 15px;
+
+    font-size: 11px;
+
+    color: #ffb000;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+/* =========================
+   RIGHT NAVIGATION
+========================= */
+
+.nav_icon {
+    position: relative;
+
+    width: 42px;
+    height: 42px;
+
+    margin-bottom: 28px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 16px;
+
+    color: #555;
+
+    cursor: pointer;
+}
+
+
+/* Moon at the top */
+
+.dark_mode {
+    margin-top: 35px;
+    margin-bottom: 180px;
+
+    color: #111;
+
+    font-size: 20px;
+}
+
+
+/* Active HOME circle */
+
+/* .nav_icon.active {
+    width: 42px;
+    height: 42px;
+
+    background-color: #ffb000;
+
+    border-radius: 50%;
+
+    color: #111;
+}
+
+.nav_icon.active img {
+  opacity: 2;
+} */
+
+/* Make sure the home icon itself is centered */
+
+/* .nav_icon.active i {
+    font-size: 16px;
+} */
+
+
+/* Tooltip */
+/* 
+.tooltip {
+    position: absolute;
+
+    right: 55px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    background-color: #111;
+    color: white;
+
+    padding: 7px 12px;
+
+    font-size: 12px;
+
+    white-space: nowrap;
+
+    opacity: 1;
+}
+
+
+/* Small arrow pointing toward Home */
+
+/* .tooltip::after {
+    content: "";
+
+    position: absolute;
+
+    right: -6px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 6px solid #111;
+}  */
