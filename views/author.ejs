@@ -8,6 +8,7 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -16,316 +17,208 @@
     <title>Portfolio</title>
   </head>
 
-  <body>
-    <div class="frame">
-      <div class="main_frame">
-        <div class="left_frame">
-          <div class="left_1">
-            <div class="left_1-1">
-              <img
-                src="/author/images/Profile.png"
-                width="156px"
-                height="142px"
-                alt="Profile rasm"
-              />
-            </div>
-            <div class="left_1-2"><%=user.name%></div>
-            <div class="left_1-3"><%=user.profession%></div>
-            <div class="left-icons">
-              <a class="link_href" href="">
-                <div class="icon">
-                  <img src="/author/icon/Dribbble.svg" alt="" class="icon-1" />
-                </div>
-              </a>
-              <a class="link_href" href="">
-                <div class="icon">
-                  <img src="/author/icon/Facebook.svg" alt="" class="icon-1" />
-                </div>
-              </a>
-              <a class="link_href" href="">
-                <div class="icon">
-                  <img src="/author/icon/Instagram.svg" alt="" class="icon-1" />
-                </div>
-              </a>
-              <a class="link_href" href="">
-                <div class="icon">
-                  <img src="/author/icon/Linkeding.svg" alt="" class="icon-1" />
-                </div>
-              </a>
-              <a class="link_href" href="">
-                <div class="icon">
-                  <img src="/author/icon/Twitter.svg" alt="" class="icon-1" />
-                </div>
-              </a>
-              <a class="link_href" href="">
-                <div class="icon">
-                  <img src="/author/icon/Youtube.svg" alt="" class="icon-1" />
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="marginer"></div>
 
-          <div class="left_2">
-            <div class="info-box">
-              <div class="info-row">
-                <span class="label">Age:</span>
-                <span>24</span>
-              </div>
 
-              <div class="info-row">
-                <span class="label">Residence:</span>
-                <span>BD</span>
-              </div>
 
-              <div class="info-row">
-                <span class="label">Freelance:</span>
-                <span style="color: #7eb942">Available</span>
-              </div>
+    <body>
 
-              <div class="info-row">
-                <span class="label">Address:</span>
-                <span>Dhaka, Bangladesh</span>
+        <div class="wrapper d-flex">
+
+          <!-- LEFT SIDEBAR -->
+          <aside class="sidebar">
+
+            <!-- PROFILE -->
+            <div class="section text-center">
+              <img src="/author/images/Profile.png" class="avatar">
+              <h5>Marcos</h5>
+              <p class="text-muted small">Heart</p>
+
+              <div class="socials">
+                <a href="#"><img src="/author/icon/Facebook.svg"></a>
+                <a href="#"><img src="/author/icon/Facebook.svg"></a>
+                <a href="#"><img src="/author/icon/Instagram.svg"></a>
+                <a href="#"><img src="/author/icon/Linkeding.svg"></a>
+                <a href="#"><img src="/author/icon/Twitter.svg"></a>
+                <a href="#"><img src="/author/icon/Youtube.svg"></a>
+                
               </div>
             </div>
-          </div>
 
-          <div class="marginer"></div>
+            <!-- PERSONAL INFO -->
+            <div class="section info">
+              <div class="info-row"><span>Age:</span>24</div>
+              <div class="info-row"><span>Residence:</span>BD</div>
+              <div class="info-row"><span>Freelance:</span><div style="color: #7eb942;">Available</div></div>
+              <div class="info-row"><span>Address:</span>Dhaka</div>
+            </div>
 
-          <div class="left_3">
-            <div class="skills-box">
-              <h2>Languages</h2>
+            <!-- LANGUAGES -->
+            <div class="section">
+              <h5>Languages</h5>
 
-              <div class="skill">
-                <div class="skill-info">
-                  <span>Bangla</span>
-                  <span>100%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar"></div>
-                </div>
+              <div class="bar">
+                <p>Bangla <span>100%</span></p>
+                <div class="progress"><div style="width:100%"></div></div>
               </div>
 
-              <div class="skill">
-                <div class="skill-info">
-                  <span>English</span>
-                  <span>80%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar js"></div>
-                </div>
+              <div class="bar">
+                <p>English <span>80%</span></p>
+                <div class="progress"><div style="width:80%"></div></div>
               </div>
 
-              <div class="skill">
-                <div class="skill-info">
-                  <span>Spanish</span>
-                  <span>60%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar spanish"></div>
-                </div>
+              <div class="bar">
+                <p>Spanish <span>60%</span></p>
+                <div class="progress"><div style="width:60%"></div></div>
               </div>
             </div>
-          </div>
 
-          <div class="marginer"></div>
+            <!-- SKILLS -->
+            <div class="section">
+              <h5>Skills</h5>
 
-          <div class="left_4">
-            <div class="skills-box">
-              <h2>Skills</h2>
-
-              <div class="skill">
-                <div class="skill-info">
-                  <span>Html</span>
-                  <span>90%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar html"></div>
-                </div>
+              <div class="bar">
+                <p>HTML <span>90%</span></p>
+                <div class="progress"><div style="width:90%"></div></div>
               </div>
 
-              <div class="skill">
-                <div class="skill-info">
-                  <span>CSS</span>
-                  <span>85%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar css"></div>
-                </div>
+              <div class="bar">
+                <p>CSS <span>85%</span></p>
+                <div class="progress"><div style="width:85%"></div></div>
               </div>
 
-              <div class="skill">
-                <div class="skill-info">
-                  <span>Js</span>
-                  <span>80%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar js"></div>
-                </div>
+              <div class="bar">
+                <p>JS <span>80%</span></p>
+                <div class="progress"><div style="width:80%"></div></div>
               </div>
 
-              <div class="skill">
-                <div class="skill-info">
-                  <span>PHP</span>
-                  <span>75%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar php"></div>
-                </div>
-              </div>
-
-              <div class="skill">
-                <div class="skill-info">
-                  <span>WordPress</span>
-                  <span>85%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar wordpress"></div>
-                </div>
+              <div class="bar">
+                <p>PHP <span>75%</span></p>
+                <div class="progress"><div style="width:75%"></div></div>
               </div>
             </div>
-          </div>
 
-          <div class="marginer"></div>
-
-          <div class="left_5">
-            <div class="extra-skills-box">
-              <h2>Extra Skills</h2>
-
-              <ul>
-                <li>Bootstrap, Materialize</li>
-                <li>Stylus, Sass, Less</li>
-                <li>Gulp, Webpack, Grunt</li>
-                <li>GIT Knowledge</li>
+            <!-- EXTRA SKILLS -->
+            <div class="section">
+              <h5>Extra Skills</h5>
+              <ul class="extra">
+                <li><img src="/author/btn_icon/Icons.svg" alt="image"> Bootstrap, Materialize</li>
+                <li><img src="/author/btn_icon/Icons.svg" alt="image"> Stylus, Sass, Less</li>
+                <li><img src="/author/btn_icon/Icons.svg" alt="image"> Gulp, Webpack, Grunt</li>
+                <li><img src="/author/btn_icon/Icons.svg" alt="image"> GIT Knowledge</li>
               </ul>
             </div>
-          </div>
 
-          <div class="marginer"></div>
+          </aside>
+
+
+          <!-- MAIN -->
+          <main class="content flex-grow-1">
+
+            <!-- HERO -->
+            <section class="hero">
+
+              <div class="hero-text">
+                <h1>Doctor neurologists<br>in OHSU Hospital</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat feugiat placerat lobortis. Natoque rutrum semper sed suspendisse nunc lectus.</p>
+                <button class="btn btn-warning">HIRE ME →</button>
+              </div>
+
+              <img src="/author/images/Your Image 1.png" class="hero-img">
+
+              <!-- 7 SHAPES -->
+              <span class="shape s1"></span>
+              <span class="shape s2"></span>
+              <span class="shape s3"></span>
+              <span class="shape s4"></span>
+              <span class="shape s5"></span>
+              <span class="shape s6"></span>
+              <span class="shape s7"></span>
+
+            </section>
+
+
+            <!-- SERVICES -->
+            <section class="services text-center">
+              <h3>My Services</h3>
+              <p class="text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+
+              <div class="container mt-4">
+                <div class="row g-4">
+
+                  <div class="col-md-4 d-flex">
+                    <div class="card-box">
+                      <img src="/author/box_images/coding.svg">
+                      <h5>Web Development</h5>
+                      <p>Blog, E-commerce</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 d-flex">
+                    <div class="card-box">
+                      <img src="/author/box_images/illustration.svg">
+                      <h5>UI/UX Design</h5>
+                      <p>Mobile App, Website</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 d-flex">
+                    <div class="card-box">
+                      <img src="/author/box_images/Microphone.svg">
+                      <h5>Sound Design</h5>
+                      <p>Voice Over</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 d-flex">
+                    <div class="card-box">
+                      <img src="/author/box_images/game-development.svg">
+                      <h5>Game Design</h5>
+                      <p>Character Design</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 d-flex">
+                    <div class="card-box">
+                      <img src="/author/box_images/Photographer.svg">
+                      <h5>Photography</h5>
+                      <p>Portrait</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 d-flex">
+                    <div class="card-box">
+                      <h5>Advertising</h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi. </p>
+                      <a style="text-decoration: none; color: #ffb400;" href="#">ORDER NOW ></a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </section>
+
+          </main>
+
+
+          <!-- RIGHT SIDEBAR -->
+          <aside class="rightbar">
+
+            <div class="menu"><img src="/author/menu_icon/Contrast.svg" alt=""></div>
+
+            <div class="menu-group">
+              <div class="menu top active"><img src="/author/menu_icon/Home.svg" alt=""></div>
+              <div class="menu"><img src="/author/menu_icon/Contact.svg" alt=""></div>
+              <div class="menu"><img src="/author/menu_icon/Portfolio.svg" alt=""></div>
+              <div class="menu"><img src="/author/menu_icon/Contact.svg" alt=""></div>
+              <div class="menu"><img src="/author/menu_icon/Service.svg" alt=""></div>
+              <div class="menu"><img src="/author/menu_icon/Cv.svg" alt=""></div>
+              <div class="menu"><img src="/public/author/menu_icon/Blog.svg" alt=""></div>
+            </div>
+
+          </aside>
+
         </div>
-        <div class="midd_frame">
-          <section class="hero_section">
-            <div class="hero_text">
-              <h1>Doctor neurologists<br />in OHSU Hospital</h1>
 
-              <p>
-                Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Et,
-                Volutpat Feugiat Placerat Lobortis. Natoque Rutrum Semper Sed
-                Suspendisse Nunc Lectus.
-              </p>
-
-              <button class="hire_btn">HIRE ME →</button>
-            </div>
-
-            <div class="hero_image">
-              <img src="/author/images/Your Image 1.png" alt="Doctor" />
-            </div>
-          </section>
-          <section class="services_intro">
-            <h2>My Services</h2>
-
-            <p>
-              Amet Minim Mollit Non Deserunt Ullamco Est Sit Aliqua Dolor Do
-              Amet Sint. Velit Officia Consequat Duis Enim Velit Mollit. Lorem
-              Ipsum. Velit Officia Consequat Duis Enim Velit Mollit. Lorem
-              Ipsum.
-            </p>
-          </section>
-          <section class="services_grid">
-            <!-- BOX 1 -->
-            <div class="service_box">
-              <div class="service_icon">🖥️</div>
-
-              <h3>Web Development</h3>
-
-              <p>Blog, E-Commerce</p>
-            </div>
-
-            <!-- BOX 2 -->
-            <div class="service_box">
-              <div class="service_icon">🖌️</div>
-
-              <h3>UI/UX Design</h3>
-
-              <p>Mobile App, Website Design</p>
-            </div>
-
-            <!-- BOX 3 -->
-            <div class="service_box">
-              <div class="service_icon">🎙️</div>
-
-              <h3>Sound Design</h3>
-
-              <p>Voice Over, Beat Making</p>
-            </div>
-
-            <!-- BOX 4 -->
-            <div class="service_box">
-              <div class="service_icon">🎮</div>
-
-              <h3>Game Design</h3>
-
-              <p>Character Design, Props & Objects</p>
-            </div>
-
-            <!-- BOX 5 -->
-            <div class="service_box">
-              <div class="service_icon">📷</div>
-
-              <h3>Photography</h3>
-
-              <p>Portrait, Product Photography</p>
-            </div>
-
-            <!-- BOX 6 -->
-            <div class="service_box">
-              <h3>Advertising</h3>
-
-              <p>
-                Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. Vitae
-                Nulla Diam In Ac Dictum A Urna Viverra Morbi.
-              </p>
-
-              <a href="#">READ MORE →</a>
-            </div>
-          </section>
-        </div>
-        <div class="right_frame">
-          <div class="nav_icon dark_mode">
-            <img src="/author/menu_icon/Contrast.svg" alt="">
-          </div>
-
-          <!-- Home -->
-          <div class="nav_icon">
-            <img src="/author/menu_icon/Portfolio.svg" alt="">
-          </div>
-
-          <!-- Services -->
-          <div class="nav_icon">
-            <img src="/author/menu_icon/Service.svg" alt="">
-          </div>
-
-          <!-- Education -->
-          <div class="nav_icon">
-            <img src="/author/menu_icon/Cv.svg" alt="">
-          </div>
-
-          <!-- Work -->
-          <div class="nav_icon">
-            <img src="/author/menu_icon/Portfolio.svg" alt="">
-          </div>
-
-          <!-- Contact -->
-          <div class="nav_icon">
-            <img src="/author/menu_icon/Blog.svg" alt="">
-          </div>
-
-          <!-- Message -->
-          <div class="nav_icon">
-            <img src="/author/menu_icon/Contact.svg" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+    </body>
 </html>
+
