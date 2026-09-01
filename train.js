@@ -4,19 +4,48 @@
 
 // masalani yechimi:
 
-function countLetter(harf, soz) {
-    let counter = 0;
+// function countLetter(harf, soz) {
+//     let counter = 0;
 
-    for(let a = 0; a < soz.length; a++) {
-        if (soz[a] === harf) {
+//     for(let a = 0; a < soz.length; a++) {
+//         if (soz[a] === harf) {
+//             counter++;
+//         }
+//     }
+//     return counter;
+// };
+
+// let result = countLetter("a", "alphabet");
+// console.log(`The result is: ${result}`);
+
+
+///////////////////////////////////
+
+//TASK B
+
+// Shunday, function tuzingki, bu function yagona parametrga ega bo'lib
+// string tarkibidagi sonlar miqdorini qaytarsin
+
+// Masalan: countDigits("ad2a54y79wet0sfgb9")
+// Yuqoridagi string tarkibida 7 dona raqam qatnashganligi uchun, natija 7 qaytadi
+
+//masalani yechimi:
+function countDigits(word) {
+    let counter = 0;
+    for(let i = 0; i < word.length; i++) {
+        if (word[i] >= "0" && word[i] <= "9") {
             counter++;
         }
     }
     return counter;
 };
 
-let result = countLetter("a", "alphabet");
+let result = countDigits("ad2a54y79wet0sfgb9");
 console.log(`The result is: ${result}`);
+
+
+
+
 
 
 
