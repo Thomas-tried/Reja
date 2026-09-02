@@ -18,7 +18,6 @@
 // let result = countLetter("a", "alphabet");
 // console.log(`The result is: ${result}`);
 
-
 ///////////////////////////////////
 
 //TASK B
@@ -31,23 +30,17 @@
 
 //masalani yechimi:
 function countDigits(word) {
-    let counter = 0;
-    for(let i = 0; i < word.length; i++) {
-        if (word[i] >= "0" && word[i] <= "9") {
-            counter++;
-        }
+  let counter = 0;
+  for (let i = 0; i < word.length; i++) {
+    if (word[i] >= "0" && word[i] <= "9") {
+      counter++;
     }
-    return counter;
-};
+  }
+  return counter;
+}
 
 let result = countDigits("ad2a54y79wet0sfgb9");
 console.log(`The result is: ${result}`);
-
-
-
-
-
-
 
 ///////////////////////////////////
 // console.log("Jack Ma maslahatlari");
@@ -60,7 +53,6 @@ console.log(`The result is: ${result}`);
 //   "yoshlarga investitsiya qiling", // 50–60
 //   "endi dam oling, foydasi yoq endi", // 60
 // ];
-
 
 //async functions
 // async function maslahatBering(a) {
@@ -75,10 +67,9 @@ console.log(`The result is: ${result}`);
 //             setTimeout(() => {
 //                 resolve(list[5]);
 //         }, 5000);
-//         }) 
+//         })
 //     }
 // }
-
 
 //callback functions
 // function maslahatBering(a, callback) {
@@ -112,8 +103,6 @@ console.log(`The result is: ${result}`);
 //     console.log('ERROR:', err);
 //   })
 // console.log('passed here 1');
-
-
 
 // call via async/await
 // async function run() {
