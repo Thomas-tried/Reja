@@ -29,18 +29,91 @@
 // Yuqoridagi string tarkibida 7 dona raqam qatnashganligi uchun, natija 7 qaytadi
 
 //masalani yechimi:
-function countDigits(word) {
-  let counter = 0;
-  for (let i = 0; i < word.length; i++) {
-    if (word[i] >= "0" && word[i] <= "9") {
-      counter++;
-    }
+// function countDigits(word) {
+//   let counter = 0;
+//   for (let i = 0; i < word.length; i++) {
+//     if (word[i] >= "0" && word[i] <= "9") {
+//       counter++;
+//     }
+//   }
+//   return counter;
+// }
+
+// let result = countDigits("ad2a54y79wet0sfgb9");
+// console.log(`The result is: ${result}`);
+
+// Task C
+
+//Shop nomli class tuzing, va bu class 3 xill parametr qabul qilsin.
+// Hamda classning quyidagdek 3'ta metodi bo'lsin:
+
+// 1) qoldiq
+// 2) sotish
+// 3) qabul
+
+// Har bir metod ishga tushgan vaqtda log qilinsin
+
+// MASALAN:
+// const shop = new Shop(4, 5, 2)
+
+// shop.qoldiq();
+// natija qaytishi kerak: Hozir 20: 40'da 4'ta non, 5'ta lag'mon va 2'ta cola mavjud
+
+// shop.sotish("non", 3); & shop.qabul("cola", 4); & shop.qoldiq();
+// Natija qaytishi kerak: Hozir 20:50da 1ta non, 5ta lag'mon va 6ta cola mavjud!
+
+class Shop {
+  constructor(non, lagmon, cola) {
+    this.non = non;
+    this.lagmon = lagmon;
+    this.cola = cola;
   }
-  return counter;
+
+  getVaqt() {
+    const now = new Date();
+    const soat = now.getHours();
+    const daqiqa = now.getMinutes();
+    return `${soat}:${daqiqa}`; // faqat soat va minutni korsatush un
+  }
+
+  qoldiq() {
+    const vaqt = this.getVaqt(); // shopdan chaqirib olamiz
+    console.log(
+      `${vaqt} da ${this.non} ta non, ${this.lagmon} ta lagmon, ${this.cola} ta cola bor`,
+    );
+  }
+
+  sotish(mahsulot, miqdor) {
+    const vaqt = this.getVaqt();
+    if (mahsulot === "non") {
+      this.non -= miqdor;
+    } else if (mahsulot === "lagmon") {
+      this.lagmon -= miqdor;
+    } else if (mahsulot === "cola") {
+      this.cola -= miqdor;
+    }
+
+    console.log(`${vaqt} da ${miqdor} ta ${mahsulot} sotildi`);
+  }
+
+  qabul(mahsulot, miqdor) {
+    const vaqt = this.getVaqt();
+    if (mahsulot === "non") {
+      this.non += miqdor;
+    } else if (mahsulot === "lagmon") {
+      this.lagmon += miqdor;
+    } else if (mahsulot === "cola") {
+      this.cola += miqdor;
+    }
+    console.log(`${vaqt} da ${miqdor} ta ${mahsulot} qo'shildi`);
+  }
 }
 
-let result = countDigits("ad2a54y79wet0sfgb9");
-console.log(`The result is: ${result}`);
+const shop = new Shop(4, 5, 6);
+shop.qoldiq();
+shop.sotish("non", 2);
+shop.qabul("lagmon", 3);
+shop.qoldiq();
 
 ///////////////////////////////////
 // console.log("Jack Ma maslahatlari");
