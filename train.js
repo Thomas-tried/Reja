@@ -62,60 +62,82 @@
 // shop.sotish("non", 3); & shop.qabul("cola", 4); & shop.qoldiq();
 // Natija qaytishi kerak: Hozir 20:50da 1ta non, 5ta lag'mon va 6ta cola mavjud!
 
-class Shop {
-  constructor(non, lagmon, cola) {
-    this.non = non;
-    this.lagmon = lagmon;
-    this.cola = cola;
-  }
+// class Shop {
+//   constructor(non, lagmon, cola) {
+//     this.non = non;
+//     this.lagmon = lagmon;
+//     this.cola = cola;
+//   }
 
-  getVaqt() {
-    const now = new Date();
-    const soat = now.getHours();
-    const daqiqa = now.getMinutes();
-    return `${soat}:${daqiqa}`; // faqat soat va minutni korsatush un
-  }
+//   getVaqt() {
+//     const now = new Date();
+//     const soat = now.getHours();
+//     const daqiqa = now.getMinutes();
+//     return `${soat}:${daqiqa}`; // faqat soat va minutni korsatush un
+//   }
 
-  qoldiq() {
-    const vaqt = this.getVaqt(); // shopdan chaqirib olamiz
-    console.log(
-      `${vaqt} da ${this.non} ta non, ${this.lagmon} ta lagmon, ${this.cola} ta cola bor`,
-    );
-  }
+//   qoldiq() {
+//     const vaqt = this.getVaqt(); // shopdan chaqirib olamiz
+//     console.log(
+//       `${vaqt} da ${this.non} ta non, ${this.lagmon} ta lagmon, ${this.cola} ta cola bor`,
+//     );
+//   }
 
-  sotish(mahsulot, miqdor) {
-    const vaqt = this.getVaqt();
-    if (mahsulot === "non") {
-      this.non -= miqdor;
-    } else if (mahsulot === "lagmon") {
-      this.lagmon -= miqdor;
-    } else if (mahsulot === "cola") {
-      this.cola -= miqdor;
-    }
+//   sotish(mahsulot, miqdor) {
+//     const vaqt = this.getVaqt();
+//     if (mahsulot === "non") {
+//       this.non -= miqdor;
+//     } else if (mahsulot === "lagmon") {
+//       this.lagmon -= miqdor;
+//     } else if (mahsulot === "cola") {
+//       this.cola -= miqdor;
+//     }
 
-    console.log(`${vaqt} da ${miqdor} ta ${mahsulot} sotildi`);
-  }
+//     console.log(`${vaqt} da ${miqdor} ta ${mahsulot} sotildi`);
+//   }
 
-  qabul(mahsulot, miqdor) {
-    const vaqt = this.getVaqt();
-    if (mahsulot === "non") {
-      this.non += miqdor;
-    } else if (mahsulot === "lagmon") {
-      this.lagmon += miqdor;
-    } else if (mahsulot === "cola") {
-      this.cola += miqdor;
-    }
-    console.log(`${vaqt} da ${miqdor} ta ${mahsulot} qo'shildi`);
+//   qabul(mahsulot, miqdor) {
+//     const vaqt = this.getVaqt();
+//     if (mahsulot === "non") {
+//       this.non += miqdor;
+//     } else if (mahsulot === "lagmon") {
+//       this.lagmon += miqdor;
+//     } else if (mahsulot === "cola") {
+//       this.cola += miqdor;
+//     }
+//     console.log(`${vaqt} da ${miqdor} ta ${mahsulot} qo'shildi`);
+//   }
+// }
+
+// const shop = new Shop(4, 5, 6);
+// shop.qoldiq();
+// shop.sotish("non", 2);
+// shop.qabul("lagmon", 3);
+// shop.qoldiq();
+
+// TASK D
+
+// Ikkita parametra ega function tuzing, va functioning berilgan birinchi va ikkinchi parametr qiymatlari o'zaro to'liq mos kelsa true qiymat qaytarsin.
+
+// Masalan: checkContent("mitgroup", "gmtiprou") return true
+
+// Masalani yechimi
+
+function checkContent(string1, string2) {
+  if (string1.length !== string2.length) {
+    return false;
   }
+  //agar berilgan 2ta stringni uzunligi togri bomasa tekshirib o'tirsh kerak emas shu un birinchi lengthni solishtiramiz
+  const firstWord = string1.split("").sort().join("");
+  const secondWord = string2.split("").sort().join("");
+  return firstWord === secondWord;
 }
 
-const shop = new Shop(4, 5, 6);
-shop.qoldiq();
-shop.sotish("non", 2);
-shop.qabul("lagmon", 3);
-shop.qoldiq();
-
+console.log(checkContent("mitgroup", "gmtiprou")); // true
+console.log(checkContent("temur", "rumte"));
+console.log(checkContent("ferrari", "iraerfa"));
 ///////////////////////////////////
+// callback functions /////
 // console.log("Jack Ma maslahatlari");
 
 // const list = [

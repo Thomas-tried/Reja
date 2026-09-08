@@ -1,9 +1,9 @@
 console.log("web-serverni boshlash");
 const express = require("express");
-const res = require("express/lib/response");
+// const res = require("express/lib/response");
 const app = express();
 const fs = require("fs");
-const { compose } = require("stream");
+// const { compose } = require("stream");
 
 //MongoDB chaqirish
 const db = require("./server").db();
@@ -51,6 +51,27 @@ app.post("/delete-item", (req, res) => {
 
 app.get("/author", (req, res) => {
   res.render("author", { user: user });
+});
+
+app.post("/edit-item", (req, res) => {
+  const data = req.body;
+  console.log(data);
+  db.collection("plans").findOneAndUpdate(
+    { _id: new mongodb.ObjectId(data.id) },
+    { $set: { reja: data.new_input } },
+    function (err, data) {
+      res.json({ state: "success" });
+    },
+  );
+});
+
+//delete all
+app.post("/delete-all", (req, res) => {
+  if (req.body.delete_all) {
+    db.collection("plans").deleteMany(function () {
+      res.json({ state: "hamma rejalar ochirildi" });
+    });
+  }
 });
 
 app.get("/", function (req, res) {
