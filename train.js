@@ -123,19 +123,36 @@
 
 // Masalani yechimi
 
-function checkContent(string1, string2) {
-  if (string1.length !== string2.length) {
-    return false;
-  }
-  //agar berilgan 2ta stringni uzunligi togri bomasa tekshirib o'tirsh kerak emas shu un birinchi lengthni solishtiramiz
-  const firstWord = string1.split("").sort().join("");
-  const secondWord = string2.split("").sort().join("");
-  return firstWord === secondWord;
+// function checkContent(string1, string2) {
+//   if (string1.length !== string2.length) {
+//     return false;
+//   }
+//   //agar berilgan 2ta stringni uzunligi togri bomasa tekshirib o'tirsh kerak emas shu un birinchi lengthni solishtiramiz
+//   const firstWord = string1.split("").sort().join("");
+//   const secondWord = string2.split("").sort().join("");
+//   return firstWord === secondWord;
+// }
+
+// console.log(checkContent("mitgroup", "gmtiprou")); // true
+// console.log(checkContent("temur", "rumte"));
+// console.log(checkContent("ferrari", "iraerfa"));
+
+// TASK E
+
+// Shunday function tuzing, u bitta string argumentini qabul qilib, qabul qilingan stringni teskari ko'rinishda return qilsin.
+
+// Masalan: getReverse("hello") return "olleh"
+
+// masalani yechimi:
+
+
+function getReverse(string) {
+  return string.split("").reverse().join("");
 }
 
-console.log(checkContent("mitgroup", "gmtiprou")); // true
-console.log(checkContent("temur", "rumte"));
-console.log(checkContent("ferrari", "iraerfa"));
+let result = getReverse("Temur");
+console.log(result);
+
 ///////////////////////////////////
 // callback functions /////
 // console.log("Jack Ma maslahatlari");
