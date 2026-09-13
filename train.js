@@ -146,11 +146,36 @@
 // masalani yechimi:
 
 
-function getReverse(string) {
-  return string.split("").reverse().join("");
+// function getReverse(string) {
+//   return string.split("").reverse().join("");
+// }
+
+// let result = getReverse("Temur");
+// console.log(result);
+
+
+//TASK F
+
+// Yagona string argumentga ega findDoublers nomli function tuzing. Agar stringda bittadan ortiq bir xil harflar ishtirok etgan bo'lsa true yokida false natija qaytarsin.
+
+// Masalan: findDoublers("hello") return true
+
+function findDoublers(string) {
+  string = string.toLowerCase(); 
+  let letters = [];
+
+  for(let i = 0; i < string.length; i++) {
+    let hozirgiHarf = string[i];
+
+    if(letters.includes(hozirgiHarf)) {
+      return true;
+    }
+    letters.push(hozirgiHarf);
+  }
+  return false;
 }
 
-let result = getReverse("Temur");
+let result = findDoublers("assalom");
 console.log(result);
 
 ///////////////////////////////////
