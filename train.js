@@ -160,24 +160,44 @@
 
 // Masalan: findDoublers("hello") return true
 
-function findDoublers(string) {
-  string = string.toLowerCase(); 
-  let letters = [];
+// function findDoublers(string) {
+//   string = string.toLowerCase(); 
+//   let letters = [];
 
-  for(let i = 0; i < string.length; i++) {
-    let hozirgiHarf = string[i];
+//   for(let i = 0; i < string.length; i++) {
+//     let hozirgiHarf = string[i];
 
-    if(letters.includes(hozirgiHarf)) {
-      return true;
+//     if(letters.includes(hozirgiHarf)) {
+//       return true;
+//     }
+//     letters.push(hozirgiHarf);
+//   }
+//   return false;
+// }
+
+// let result = findDoublers("assalom");
+// console.log(result);
+
+// TASK G
+
+// Yagona parametrga ega function tuzing. Array tarkibidagi birinchi eng katta qiymatning indeksini qaytarsin.
+
+// Masalan: getHighestIndex([5, 21, 12, 21, 8]) return 1
+
+function getHighestIndex(array) {
+  let index = 0;
+  let value = array[0];
+
+  for(let i = 1; i < array.length; i++) {
+    if(array[i] > value) {
+      value = array[i];
+      index = i;
     }
-    letters.push(hozirgiHarf);
   }
-  return false;
+  return index;
 }
 
-let result = findDoublers("assalom");
-console.log(result);
-
+console.log(getHighestIndex([30, 40, 50, 20, 21]));
 ///////////////////////////////////
 // callback functions /////
 // console.log("Jack Ma maslahatlari");
