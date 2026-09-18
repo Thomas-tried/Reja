@@ -184,20 +184,41 @@
 
 // Masalan: getHighestIndex([5, 21, 12, 21, 8]) return 1
 
-function getHighestIndex(array) {
-  let index = 0;
-  let value = array[0];
+// function getHighestIndex(array) {
+//   let index = 0;
+//   let value = array[0];
 
-  for(let i = 1; i < array.length; i++) {
-    if(array[i] > value) {
-      value = array[i];
-      index = i;
+//   for(let i = 1; i < array.length; i++) {
+//     if(array[i] > value) {
+//       value = array[i];
+//       index = i;
+//     }
+//   }
+//   return index;
+// }
+
+// console.log(getHighestIndex([30, 40, 50, 20, 21]));
+
+// TASK K
+
+// Berilayotgan parametr tarkibida nechta unli harf bor ekanligini aniqlovchi function tuzing.
+
+// Masalan: countVowels("string") return 1
+
+function countVowels(string) {
+  const vowels = "aeiouAEIOU";
+  let count = 0;
+  for (let char of string) {
+    if (vowels.includes(char)) {
+      count++;
     }
   }
-  return index;
+  return count;
 }
 
-console.log(getHighestIndex([30, 40, 50, 20, 21]));
+console.log(countVowels("string"));
+
+
 ///////////////////////////////////
 // callback functions /////
 // console.log("Jack Ma maslahatlari");
